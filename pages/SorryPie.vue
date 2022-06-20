@@ -2,8 +2,13 @@
     <div>
       <Header/>
       <Hero/>
-      <h2>Login/Signup</h2>
-      <img src="../img/sorrypie_login.png" class="d-flex justify-content-center">
+      <h2 class="animate__animated animate__fadeInUp animate__delay-2s">Login/Signup</h2>
+      <img src="../img/sorrypie_login.png" class="d-flex justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
+      <h2 class="animate__animated animate__fadeInUp animate__delay-4s">Essentials</h2>
+      <img src="../img/sorrypie_essentials.png" class="d-flex justify-content-center animate__animated animate__fadeInUp animate__delay-4s">
+      <h2 class="animate__animated animate__fadeInUp animate__delay-7s">Create new</h2>
+      <img src="../img/sorrypie_createnew.png" class="d-flex justify-content-center animate__animated animate__fadeInUp animate__delay-7s">
+      <NextProject/>
       <Footer/>
   </div>
 </template>
@@ -34,6 +39,7 @@ img {
 </style>
 
 <script>
+
 export default {
   name: 'details',
   transition: 'home'

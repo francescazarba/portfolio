@@ -3,7 +3,7 @@
     <div class="col-12 d-flex flex-wrap">
 
       <div class="col-7 d-flex flex-wrap mb-5">
-        <div class="col-12 image-project wow slideInLeft">
+        <div class="col-12 image-project animate__animated animate__fadeInUp animate__delay-4s" data-aos="fade-right">
           <a><img class="fluid" src="../img/kfd-cover.jpg" alt=""></a>
         </div>
         <div class="col-12 description">
@@ -13,7 +13,7 @@
       </div>
 
       <div class="col-5 mb-5">
-        <div class="col-12 image-small wow slideInLeft">
+        <div class="col-12 image-small animate__animated animate__fadeInUp animate__delay-4s" data-aos="fade-right">
           <a><img class="fluid" src="../img/cohabit-cover.jpg" alt=""></a>
           </div>
           <div class="col-12 description">
@@ -23,7 +23,7 @@
         </div>
 
       <div class="col-5 mt-5 mb-5">
-        <div class="col-12 image-small wow slideInLeft">
+        <div class="col-12 image-small animate__animated animate__fadeInUp animate__delay-5s" data-aos="fade-right">
           <a><img class="fluid" src="../img/trackit-cover.jpg" alt=""></a>
           </div>
           <div class="col-12 description">
@@ -33,7 +33,7 @@
         </div>
 
           <div class="col-7 d-flex flex-wrap mt-5 mb-5">
-        <div class="col-12 image-project wow slideInLeft">
+        <div class="col-12 image-project animate__animated animate__fadeInUp animate__delay-5s" data-aos="fade-right">
           <a><img class="fluid" src="../img/fondazionenegri-cover.jpg" alt=""></a>
         </div>
         <div class="col-12 description">

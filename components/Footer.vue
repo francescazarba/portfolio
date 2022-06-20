@@ -13,11 +13,11 @@
             
              
             <div class="col-lg-4 d-flex justify-content-center">
-            <a href="#" class="mt-1 email">hello@francescazarba.it</a>
+            <a href = "mailto:hello@francescazarba.it" class="mt-1 email">hello@francescazarba.it</a>
             </div>
 
             <div class="col-lg-4 d-flex justify-content-center">
-            <a href="#" class="mt-1">SOCIAL <SocialIcons/> </a>
+            <p href="#" class="mt-1"><b>SOCIAL</b> <SocialIcons/> </p>
             </div>
         </div>
 
@@ -35,7 +35,7 @@ footer {
     background-color: var(--dark-color);
     padding-left: 5%;
     padding-right: 5%;
-    padding-top:7%;
+    padding-top: 5%;
 }
 
 h1 {

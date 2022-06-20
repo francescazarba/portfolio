@@ -13,10 +13,10 @@
       <NuxtLink to="/" class="nav-link active">WORK</NuxtLink>
     </li>
     <li class="nav-item">
-      <NuxtLink to="/About" class="nav-link">ABOUT</NuxtLink>
+      <NuxtLink to="/about" class="nav-link">ABOUT</NuxtLink>
     </li>
     <li class="nav-item">
-      <NuxtLink to="/Contact" class="nav-link">CONTACT</NuxtLink>
+      <NuxtLink to="/contact" class="nav-link">CONTACT</NuxtLink>
     </li>
   </ul>
   </nav> 
@@ -30,7 +30,7 @@
 
 <style scoped>
 header {
-  height: 320px;
+  height: 30vh;
   padding: 120px;
 }
 

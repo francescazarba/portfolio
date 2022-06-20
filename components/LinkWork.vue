@@ -1,11 +1,11 @@
 <template>
       <section class="section section--titles mb-5"> <!--inizio sezione titoli-->
-    <div class="col-12 animate__animated animate__fadeInUp">
+    <div class="col-12 animate__animated animate__fadeInUp animate__delay-2s wow fadeInUp">
       <article class="inline-block">
         <h4 class="featured-subtitle">ALL WORKS</h4>
         <div class="items-center">
         <h1 class="variant-color">
-          <a href="#" class="link-dark">Andersen</a> / <a href="#" class="link-dark">SorryPie</a> / <a href="#" class="link-dark">Katie Fournier Design</a> / <a href="#" class="link-dark">Fondazione Negri</a> / <a href="#" class="link-dark">Trackit</a> / <a href="#" class="link-dark">Cohabit</a> /
+          <a href="#" class="link-dark">Andersen</a> / <NuxtLink to="/sorrypie">SorryPie</NuxtLink> / <a href="#" class="link-dark">Katie Fournier Design</a> / <a href="#" class="link-dark">Fondazione Negri</a> / <a href="#" class="link-dark">Trackit</a> / <a href="#" class="link-dark">Cohabit</a> /
         </h1>
         </div>
       </article>

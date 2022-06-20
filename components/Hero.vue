@@ -1,7 +1,7 @@
 <template>
      <section class="section section--hero">
-        <div class="image-header col-12 d-flex items-center lax lax_preset_fadeIn:50:100 lax_preset_spin">
-          <NuxtLink to="/SorryPie"><img class="fluid" src="../img/header.jpg" alt=""></NuxtLink>
+        <div class="image-header col-12 d-flex items-center wow fadeInUp animate__animated animate__fadeInUp">
+          <NuxtLink to="/sorryPie"><img class="fluid" src="../img/header.jpg" alt=""></NuxtLink>
         </div>
 
         <div class="col-12 description">
