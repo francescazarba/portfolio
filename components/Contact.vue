@@ -1,10 +1,10 @@
 <template>
 <div class="contact">             
-    <div class="col-lg-12 d-flex justify-content-center">
-        <a href = "mailto:hello@francescazarba.it" class="animate__animated animate__bounce">hello@francescazarba.it</a>
+    <div class="col-lg-12 d-flex justify-content-center email">
+        <a href = "mailto:hello@francescazarba.it">hello@francescazarba.it</a>
     </div>
 
-    <div class="col-lg-12 icon"><SocialIcons/></div> 
+    <div class="col-lg-12 section-icon"><SocialIcons/></div> 
 </div>
 </template>
 
@@ -16,12 +16,13 @@
     height: 70vh;
 }
 
-.icon{
+.section-icon{
     background-color: var(--primary-color);
     height:50vh;
     text-align: center;
     margin-top:0;
     padding-top:10rem;
+    opacity:1;
 }
 
 a {
@@ -50,4 +51,23 @@ h4 {
     color: var(--black);
 }
 
+.email {
+    opacity:1;
+}
 </style>
+
+
+<script>
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
+gsap.registerPlugin(ScrollTrigger);
+
+export default {
+  name: 'ContactPage',
+    mounted: function(){
+      gsap.from('.email', {opacity:0, y:-50, scale:0.97, duration:1,});
+      gsap.from('.icon', {opacity:0, y:450, duration:1,});
+    }
+}
+
+</script>

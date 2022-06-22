@@ -2,23 +2,23 @@
      <section class="col-lg-12 section--about d-flex justify-content-start">
        
         <div class="col-lg-6">
-        <h2>Leave a little <i>digital sparkle</i> everywhere around you.</h2>
-        <h4>Tell me your idea. <br> I will make it come true.</h4>
+        <h2 class="citazione">Leave a little <i>digital sparkle</i> everywhere around you.</h2>
+        <h4 class="sub-citazione">Tell me your idea. <br> I will make it come true.</h4>
         </div>
 
         <div class="col-lg-5 skills justify-content-end">
     
-        <h3 class="mt-5 pt-5">WEB DESIGN</h3>
-        <h5 class="pb-5">Design and development website, web-app and digital interface.<br></h5>
+        <h3 class="mt-5 pt-5 title-skills">WEB DESIGN</h3>
+        <h5 class="pb-5 subtitle-skills">Design and development website, web-app and digital interface.<br></h5>
 
-        <h3>MOBILE APP</h3>
-        <h5 class="pb-5">Analysis, design mobile applications and prototyping with XD, Figma, Protopie.</h5>
+        <h3 class="title-skills">MOBILE APP</h3>
+        <h5 class="pb-5 subtitle-skills">Analysis, design mobile applications and prototyping with XD, Figma, Protopie.</h5>
 
-        <h3>UI/UX DESIGN</h3>
-        <h5 class="pb-5">User flow design, user stories, evaluation and consulting.</h5>
+        <h3 class="title-skills">UI/UX DESIGN</h3>
+        <h5 class="pb-5 subtitle-skills">User flow design, user stories, evaluation and consulting.</h5>
 
-        <h3>GRAPHIC DESIGN</h3>
-        <h5 class="pb-5">Digital publishing, editorial project and social channels graphics. </h5>
+        <h3 class="title-skills">GRAPHIC DESIGN</h3>
+        <h5 class="pb-5 subtitle-skills">Digital publishing, editorial project and social channels graphics. </h5>
 
         </div>
       </section>
@@ -76,4 +76,47 @@ h5 {
   font-weight: 500;
 }
 
+.title-skills, .subtitle-skills {
+  opacity:1;
+}
+
 </style>
+
+<script>
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
+gsap.registerPlugin(ScrollTrigger);
+
+export default {
+  name: 'AboutPage',
+    mounted: function(){
+      gsap.from('.citazione', {opacity:0, x:-200, duration:2,});
+      gsap.from('.sub-citazione', {opacity:0, x:-150, dalay:3, duration:1.8,});
+
+      gsap.from('.title-skills', {
+        y:50,
+        opacity:0,
+        rotate:-10,
+        duration:1,
+        delay:3,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".skills",
+        }
+      });
+
+       gsap.from('.subtitle-skills', {
+        y:80,
+        opacity:0,
+        duration:1.6,
+        delay:3.2,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".skills",
+        }
+      })
+
+    }
+}
+
+</script>

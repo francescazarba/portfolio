@@ -9,10 +9,12 @@
   </div>
 </template>
 
+
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;700;800;900&family=Lora:ital,wght@0,400;0,700;1,400;1,500&display=swap');
-@import 'animate.css'; 
+/*@import 'animate.css';*/
+
 
 :root {
     --black:#000000;
@@ -41,12 +43,28 @@ body {
 img:hover, li:hover {
   cursor: url('../img/custom-cursor-hover.png'), auto;
 }
+
+.section--hero, .featured-title, .featured-subtitle, .section--titles {
+  opacity:1;
+}
 </style>
 
+<script>
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
+gsap.registerPlugin(ScrollTrigger);
+
+export default {
+  name: 'IndexPage',
+}
+</script>
+
+<!--
 <script src="../js/wow.min.js"></script>
               <script>
               new WOW().init();
               </script>
+-->
 
 
 <!--<script src="https://unpkg.com/scrollreveal"></script>
@@ -75,14 +93,5 @@ img:hover, li:hover {
         itemsCounter++;
       }
 </script>-->
-
-
-<script>
-export default {
-  name: 'IndexPage'
-}
-</script>
-
-
 
 

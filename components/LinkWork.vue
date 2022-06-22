@@ -1,8 +1,8 @@
 <template>
-      <section class="section section--titles mb-5"> <!--inizio sezione titoli-->
-    <div class="col-12 animate__animated animate__fadeInUp animate__delay-2s wow fadeInUp">
+      <section class="section-two section--titles mb-4"> <!--inizio sezione titoli-->
+    <div class="col-12">
       <article class="inline-block">
-        <h4 class="featured-subtitle">ALL WORKS</h4>
+        <h4 class="tag">ALL WORKS</h4>
         <div class="items-center">
         <h1 class="variant-color">
           <a href="#" class="link-dark">Andersen</a> / <NuxtLink to="/sorrypie">SorryPie</NuxtLink> / <a href="#" class="link-dark">Katie Fournier Design</a> / <a href="#" class="link-dark">Fondazione Negri</a> / <a href="#" class="link-dark">Trackit</a> / <a href="#" class="link-dark">Cohabit</a> /
@@ -13,7 +13,7 @@
     <div class="col-12 d-flex flex-wrap section-tagline">
 
       <article class="tagline col-xs-12 col-lg-6 inline-block mb-5">
-        <h4 class="featured-subtitle">WEB SITES</h4>
+        <h4 class="tag">WEB SITES</h4>
         <div class="items-center">
         <h2 class="variant-color">
           <a href="#" class="link-dark">Katie Fournier Design</a> / <a href="#" class="link-dark">Fondazione Negri</a> / 
@@ -22,7 +22,7 @@
       </article>
 
       <article class="tagline col-xs-12 col-lg-6 inline-block mb-5">
-        <h4 class="featured-subtitle">APP MOBILE</h4>
+        <h4 class="tag">APP MOBILE</h4>
         <div class="items-center">
         <h2 class="variant-color">
           <a href="#" class="link-dark">Andersen</a> / <a href="#" class="link-dark">SorryPie</a> / <a href="#" class="link-dark">Trackit</a> / <a href="#" class="link-dark">Cohabit</a> /
@@ -38,11 +38,17 @@
 
 <style scoped>
 
+.section-two {
+  opacity: 1;
+  height: 70vh;
+}
+
 .section--titles {
   padding-left: 10%;
   padding-right: 10%;
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 24rem;
+  opacity:0;
   }
 
 h1.variant-color {
@@ -90,8 +96,26 @@ h4 {
 }
 </style>
 
+
 <script>
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
-  name: 'LinkWork'
+  name: 'LinkWork',
+    mounted: function(){
+
+      gsap.to('.section--titles', {
+        y:-60,
+        opacity:1,
+        duration:1.6,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".section-two",
+        }
+      });
+
+    }
 }
 </script>

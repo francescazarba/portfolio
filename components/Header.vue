@@ -32,6 +32,7 @@
 header {
   height: 30vh;
   padding: 120px;
+  opacity:1;
 }
 
 .logo {
@@ -63,7 +64,15 @@ nav a:hover {
 </style>
 
 <script>
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
-  name: 'Header'
+  name: 'Header',
+    mounted: function(){
+      gsap.from('header', {opacity:1, y:-20, duration:2,});
+
+    }
 }
 </script>
