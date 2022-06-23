@@ -11,7 +11,7 @@
 
          <div class="col-lg-6">
             <div class="d-flex float-right next"> 
-            <NuxtLink to="/" class="indicators-link">NEXT</NuxtLink>
+            <NuxtLink to="/fondazionenegri" class="indicators-link">NEXT</NuxtLink>
             <svg width="36" height="36" viewBox="0 0 32 32" fill="none" class="right" xmlns="http://www.w3.org/2000/svg">
             <path d="M28.8 16L20.2666 7.46667M28.8 16L20.2666 24.5333M28.8 16H2.1333" stroke="#7879F1" stroke-width="2"/>
             </svg>

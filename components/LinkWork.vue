@@ -5,7 +5,7 @@
         <h4 class="tag">ALL WORKS</h4>
         <div class="items-center">
         <h1 class="variant-color">
-          <a href="#" class="link-dark">Andersen</a> / <NuxtLink to="/sorrypie">SorryPie</NuxtLink> / <a href="#" class="link-dark">Katie Fournier Design</a> / <a href="#" class="link-dark">Fondazione Negri</a> / <a href="#" class="link-dark">Trackit</a> / <a href="#" class="link-dark">Cohabit</a> /
+          <a href="#" class="link-dark">Andersen</a> / <NuxtLink to="/sorrypie">SorryPie</NuxtLink> / <a href="#" class="link-dark">Katie Fournier Design</a> / <NuxtLink to="/fondazionenegri">Fondazione Negri</NuxtLink> / <a href="#" class="link-dark">Trackit</a> / <a href="#" class="link-dark">Cohabit</a> /
         </h1>
         </div>
       </article>
