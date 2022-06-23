@@ -6,7 +6,7 @@
         <h4 class="sub-citazione">Tell me your idea. <br> I will make it come true.</h4>
         </div>
 
-        <div class="col-lg-5 skills justify-content-end">
+        <div class="col-lg-5 section--skills justify-content-end">
     
         <h3 class="mt-5 pt-5 title-skills">WEB DESIGN</h3>
         <h5 class="pb-5 subtitle-skills">Design and development website, web-app and digital interface.<br></h5>
@@ -34,9 +34,10 @@
   margin-bottom: 4rem;
   }
 
-.skills {
+.section--skills {
     padding-left: 4rem;
     margin-top: 9rem;
+    opacity:1;
 }
 
 h2 {
@@ -82,41 +83,3 @@ h5 {
 
 </style>
 
-<script>
-import { gsap } from "gsap"; 
-import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
-gsap.registerPlugin(ScrollTrigger);
-
-export default {
-  name: 'AboutPage',
-    mounted: function(){
-      gsap.from('.citazione', {opacity:0, x:-200, duration:2,});
-      gsap.from('.sub-citazione', {opacity:0, x:-150, dalay:3, duration:1.8,});
-
-      gsap.from('.title-skills', {
-        y:50,
-        opacity:0,
-        rotate:-10,
-        duration:1,
-        delay:3,
-        startAt: {y:0},
-        scrollTrigger: {
-        trigger: ".skills",
-        }
-      });
-
-       gsap.from('.subtitle-skills', {
-        y:80,
-        opacity:0,
-        duration:1.6,
-        delay:3.2,
-        startAt: {y:0},
-        scrollTrigger: {
-        trigger: ".skills",
-        }
-      })
-
-    }
-}
-
-</script>

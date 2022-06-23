@@ -3,7 +3,7 @@
     <div class="col-12 d-flex flex-wrap">
 
       <div class="col-7 d-flex flex-wrap mb-5">
-        <div class="col-12 image-project animate__animated animate__fadeInUp animate__delay-4s" data-aos="fade-right">
+        <div class="col-12 image-project">
           <a><img class="fluid" src="../img/kfd-cover.jpg" alt=""></a>
         </div>
         <div class="col-12 description">
@@ -13,7 +13,7 @@
       </div>
 
       <div class="col-5 mb-5">
-        <div class="col-12 image-small animate__animated animate__fadeInUp animate__delay-4s" data-aos="fade-right">
+        <div class="col-12 image-small">
           <a><img class="fluid" src="../img/cohabit-cover.jpg" alt=""></a>
           </div>
           <div class="col-12 description">
@@ -23,7 +23,7 @@
         </div>
 
       <div class="col-5 mt-5 mb-5">
-        <div class="col-12 image-small animate__animated animate__fadeInUp animate__delay-5s" data-aos="fade-right">
+        <div class="col-12 image-small" data-aos="fade-right">
           <a><img class="fluid" src="../img/trackit-cover.jpg" alt=""></a>
           </div>
           <div class="col-12 description">
@@ -33,7 +33,7 @@
         </div>
 
           <div class="col-7 d-flex flex-wrap mt-5 mb-5">
-        <div class="col-12 image-project animate__animated animate__fadeInUp animate__delay-5s" data-aos="fade-right">
+        <div class="col-12 image-project" data-aos="fade-right">
           <a><img class="fluid" src="../img/fondazionenegri-cover.jpg" alt=""></a>
         </div>
         <div class="col-12 description">
@@ -52,6 +52,7 @@
 .section-project {
     background-color: var(--primary-color);
     padding-top: 4rem;
+    height: auto;
 }
 
 .description {
@@ -81,6 +82,7 @@ h4 {
     width: 100%;
     height: 60%;
     overflow: hidden;
+    opacity:1;
 }
 
 .image-small img {
@@ -96,6 +98,7 @@ h4 {
   width:100%;
   height:auto;
   overflow: hidden;
+  opacity:1;
 }
 
 .image-project img {
@@ -107,10 +110,43 @@ h4 {
 .image-project:hover img {
   transform: scale(1.1);
 }
+
+.featured-title, .featured-subtitle {
+  opacity: 1,
+}
 </style>
 
+<!--
 <script>
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
-  name: 'Work'
+  name: 'Work',
+    mounted: function(){
+
+      gsap.from('.image-project', {
+        y:800,
+        opacity:1,
+        duration:1.4,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".section-project",
+        }
+      });
+
+       gsap.from('.image-small', {
+        y:800,
+        opacity:1,
+        duration:1.4,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".section-project",
+        }
+      });
+
+    }
 }
 </script>
+-->

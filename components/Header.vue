@@ -63,6 +63,7 @@ nav a:hover {
 
 </style>
 
+<!--
 <script>
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
@@ -76,3 +77,4 @@ export default {
     }
 }
 </script>
+-->

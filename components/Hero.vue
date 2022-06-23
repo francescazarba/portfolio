@@ -56,8 +56,13 @@ h4 {
   height:auto;
   }
 
+.featured-title, .featured-subtitle {
+  opacity: 1,
+}
+
 </style>
 
+<!--
 <script>
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
@@ -101,3 +106,4 @@ export default {
     }
 }
 </script>
+-->

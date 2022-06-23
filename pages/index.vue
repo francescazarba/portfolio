@@ -56,6 +56,83 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default {
   name: 'IndexPage',
+  mounted: function(){
+      gsap.from('header', {opacity:0, y:-100, duration:1.2,});
+      gsap.from('.section--hero', {opacity:0, y:-50, duration:1.2,});
+
+      gsap.from('.featured-title', {
+        x:-400,
+        opacity:0,
+        duration:1.6,
+        startAt: {x:0,y:0},
+        scrollTrigger: {
+        trigger: ".description",
+        }
+      });
+
+       gsap.from('.featured-subtitle', {
+        x:-400,
+        opacity:0,
+        duration:1.6,
+        startAt: {x:0,y:0},
+        scrollTrigger: {
+        trigger: ".description",
+        }
+      });
+
+    gsap.from('.section--titles', {
+        y:400,
+        opacity:0,
+        duration:1.6,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".section-linkwork",
+        }
+      });
+
+    gsap.from('.image-project', {
+        y:800,
+        opacity:1,
+        duration:1.6,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".section-project",
+        }
+      });
+
+       gsap.from('.image-small', {
+        y:800,
+        opacity:1,
+        duration:1.6,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".section-project",
+        }
+      });
+
+       gsap.from('.featured-title', {
+        x:-400,
+        opacity:0,
+        duration:1.6,
+        dalay:0.4,
+        startAt: {x:0,y:0},
+        scrollTrigger: {
+        trigger: ".section-project",
+        }
+      });
+
+       gsap.from('.featured-subtitle', {
+        x:-400,
+        opacity:0,
+        duration:1.6,
+        dalay:0.4,
+        startAt: {x:0,y:0},
+        scrollTrigger: {
+        trigger: ".section-project",
+        }
+      });
+
+    }
 }
 </script>
 

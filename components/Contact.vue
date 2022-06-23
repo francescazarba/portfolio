@@ -55,19 +55,3 @@ h4 {
     opacity:1;
 }
 </style>
-
-
-<script>
-import { gsap } from "gsap"; 
-import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
-gsap.registerPlugin(ScrollTrigger);
-
-export default {
-  name: 'ContactPage',
-    mounted: function(){
-      gsap.from('.email', {opacity:0, y:-50, scale:0.97, duration:1,});
-      gsap.from('.icon', {opacity:0, y:450, duration:1,});
-    }
-}
-
-</script>

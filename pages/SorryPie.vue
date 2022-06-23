@@ -2,12 +2,22 @@
     <div>
       <Header/>
       <Hero/>
-      <h2 class="animate__animated animate__fadeInUp animate__delay-2s">Login/Signup</h2>
-      <img src="../img/sorrypie_login.png" class="d-flex justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
-      <h2 class="animate__animated animate__fadeInUp animate__delay-4s">Essentials</h2>
-      <img src="../img/sorrypie_essentials.png" class="d-flex justify-content-center animate__animated animate__fadeInUp animate__delay-4s">
-      <h2 class="animate__animated animate__fadeInUp animate__delay-7s">Create new</h2>
-      <img src="../img/sorrypie_createnew.png" class="d-flex justify-content-center animate__animated animate__fadeInUp animate__delay-7s">
+    <section class="mt-5">
+      <div class="login">
+      <h2 class="animate">Login/Signup</h2>
+      <img src="../img/sorrypie_login.png" class="d-flex justify-content-center">
+      </div>
+
+      <div class="essentials">
+      <h2 class="animate">Essentials</h2>
+      <img src="../img/sorrypie_essentials.png" class="d-flex justify-content-center">
+      </div>
+      
+      <div class="new">
+      <h2 class="animate">Create new</h2>
+      <img src="../img/sorrypie_createnew.png" class="d-flex justify-content-center">
+      </div>
+    </section>
       <NextProject/>
       <Footer/>
   </div>
@@ -36,12 +46,62 @@ img {
     padding-bottom: 4rem;
 }
 
+.essentials, .login, .new {
+  opacity: 1;
+}
+
+.animate {
+  opacity:1;
+}
+
 </style>
 
 <script>
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
-  name: 'details',
-  transition: 'home'
+  name: 'SorryPie',
+  transition: 'home',
+    mounted: function(){
+      gsap.from('header', {opacity:0, y:-60, duration:1.2,});
+
+      gsap.from('.animate', {
+        y:100,
+        opacity:0,
+        duration:1.4,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".login",
+        }
+      });
+
+       gsap.from('.animate', {
+        y:100,
+        opacity:0,
+        duration:1.4,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".essentials",
+        }
+      });
+
+       gsap.from('.animate', {
+        y:100,
+        opacity:0,
+        duration:1.4,
+        startAt: {y:0},
+        scrollTrigger: {
+        trigger: ".new",
+        }
+      });
+
+
+    
+    }
+
+    
 }
+
 </script>

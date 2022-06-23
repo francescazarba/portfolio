@@ -1,6 +1,6 @@
 <template>
-      <section class="section-two section--titles mb-4"> <!--inizio sezione titoli-->
-    <div class="col-12">
+      <section class="section-linkwork mb-5"> <!--inizio sezione titoli-->
+    <div class="col-12 section--titles">
       <article class="inline-block">
         <h4 class="tag">ALL WORKS</h4>
         <div class="items-center">
@@ -47,8 +47,8 @@
   padding-left: 10%;
   padding-right: 10%;
   width: 100%;
-  margin-top: 24rem;
-  opacity:0;
+  margin-top: 16rem;
+  opacity:1;
   }
 
 h1.variant-color {
@@ -96,7 +96,7 @@ h4 {
 }
 </style>
 
-
+<!--
 <script>
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from '../js/ScrollTrigger.min.js';
@@ -107,7 +107,7 @@ export default {
     mounted: function(){
 
       gsap.to('.section--titles', {
-        y:-60,
+        y:-100,
         opacity:1,
         duration:1.6,
         startAt: {y:0},
@@ -119,3 +119,4 @@ export default {
     }
 }
 </script>
+-->
