@@ -33,8 +33,10 @@
         </div>
 
           <div class="col-7 d-flex flex-wrap mt-5 mb-5">
-        <div class="col-12 image-project" data-aos="fade-right">
-          <a><img class="fluid" src="../img/fondazionenegri-cover.jpg" alt=""></a>
+        <div class="col-12 image-project">
+          <NuxtLink to="/fondazionenegri" class="indicators-link">
+          <img class="fluid" src="../img/fondazionenegri-cover.jpg" alt="">
+          </NuxtLink>
         </div>
         <div class="col-12 description">
           <h3 class="featured-title">FONDAZIONE NEGRI</h3>

@@ -14,8 +14,12 @@
       </div>
       
       <div class="new">
-        <h2 class="animate">All Layout</h2>
-        <img src="../img/all-layout-fn.png" class="d-flex justify-content-center fluid">
+        <h2 class="animate mb-5">All Layout</h2>
+        <img src="../img/all-layout-fn-0.png" class="d-flex justify-content-center mt-5">
+        <img src="../img/all-layout-fn-1.png" class="d-flex justify-content-center">
+        <img src="../img/all-layout-fn-2.png" class="d-flex justify-content-center">
+        <img src="../img/all-layout-fn-3.png" class="d-flex justify-content-center">
+        <img src="../img/all-layout-fn-4.png" class="d-flex justify-content-center">
       </div>
     </section>
       <NextProject/>
@@ -48,11 +52,6 @@
     height:auto;
     margin:0 auto;
     padding-bottom: 4rem;
-  }
-
-  .fluid {
-    width:100%;
-    height:auto;
   }
 
   .essentials, .login, .new {
