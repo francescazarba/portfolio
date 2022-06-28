@@ -2,7 +2,7 @@
     <div>
       <Header/>
       <Hero/>
-    <section class="mt-5">
+    <section class="section-work">
       <div class="login">
       <h2 class="animate">Login/Signup</h2>
       <img src="../img/sorrypie_login.png" class="d-flex justify-content-center">
@@ -53,6 +53,25 @@ img {
 .animate {
   opacity:1;
 }
+
+.section-work {
+  margin-top: 8rem;
+}
+
+@media (max-width:860px) {
+  .section-work{
+  margin-top:10rem;
+  }
+
+  h2 {
+    font-size: calc(2rem + 2vh)
+  }
+
+  img {
+    width:90%;
+    padding-bottom: 1rem;
+}
+  }
 
 </style>
 

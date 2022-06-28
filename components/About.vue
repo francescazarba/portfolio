@@ -1,14 +1,14 @@
 <template>
-     <section class="col-lg-12 section--about d-flex justify-content-start">
+     <section class="col-12 col-lg-12 section--about d-lg-flex justify-content-start">
        
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6">
         <h2 class="citazione">Leave a little <i>digital sparkle</i> everywhere around you.</h2>
         <h4 class="sub-citazione">Tell me your idea. <br> I will make it come true.</h4>
         </div>
 
-        <div class="col-lg-5 section--skills justify-content-end">
-    
-        <h3 class="mt-5 pt-5 title-skills">WEB DESIGN</h3>
+        <div class="col-12 col-lg-5 section--skills justify-content-end">
+        <h6 class="d-md-none pt-5">Skills</h6>
+        <h3 class="lg-mt-5 lg-pt-5 title-skills">WEB DESIGN</h3>
         <h5 class="pb-5 subtitle-skills">Design and development website, web-app and digital interface.<br></h5>
 
         <h3 class="title-skills">MOBILE APP</h3>
@@ -50,6 +50,16 @@ h2 {
   margin-bottom: 3rem;
 }
 
+h6 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: calc(2rem + 1vh);
+  line-height: 1.2;
+  font-weight: 300;
+  margin-bottom:1rem;
+}
+
 h3 {
   font-family: 'Darker Grotesque', sans-serif;
   font-weight: 400;
@@ -80,6 +90,18 @@ h5 {
 .title-skills, .subtitle-skills {
   opacity:1;
 }
+
+@media (max-width:860px) {
+.section--about {
+  padding-left: 10%;
+  }
+
+.section--skills {
+    padding-left: 1rem;
+    margin-top: 3rem;
+}
+
+  }
 
 </style>
 

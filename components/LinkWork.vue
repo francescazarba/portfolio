@@ -1,5 +1,5 @@
 <template>
-      <section class="section-linkwork mb-5"> <!--inizio sezione titoli-->
+      <section class="lg-mb-5"> <!--inizio sezione titoli-->
     <div class="col-12 section--titles">
       <article class="inline-block">
         <h4 class="tag">ALL WORKS</h4>
@@ -12,7 +12,7 @@
 
     <div class="col-12 d-flex flex-wrap section-tagline">
 
-      <article class="tagline col-xs-12 col-lg-6 inline-block mb-5">
+      <article class="tagline col-xs-12 col-lg-6 inline-block lg-mb-5">
         <h4 class="tag">WEB SITES</h4>
         <div class="items-center">
         <h2 class="variant-color">
@@ -86,6 +86,10 @@ article.tagline {
   padding-left:0rem;
   }
 
+  .section--titles {
+  margin-top: 12rem;
+  }
+
 .section-tagline {
     padding-left: 0rem;
 }
@@ -94,6 +98,35 @@ h4 {
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: 400;
 }
+
+
+@media (max-width:860px) {
+  h1.variant-color {
+  font-size: calc(2.25rem + 1vh);
+  }
+
+  h2.variant-color {
+  font-size: calc(1rem + 0.75vh);
+  }
+
+  article.tagline:first-child {
+  padding-top:2rem;
+  }
+
+  article.tagline:last-child {
+  padding-left:0rem;
+  padding-top:1rem;
+  }
+
+  article.tagline {
+  padding: 1rem;
+  }
+
+  .section--titles {
+  margin-top: 8rem;
+  }
+
+  }
 </style>
 
 <!--

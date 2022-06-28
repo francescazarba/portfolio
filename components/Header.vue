@@ -7,7 +7,7 @@
           <a href="index.html"><Logo/></a>
         </div>
   
-  <nav>
+  <nav class="xs-hide col-12 col-lg-6 col-xs-12">
     <ul class="nav justify-content-end">
     <li class="nav-item">
       <NuxtLink to="/" class="nav-link active">WORK</NuxtLink>
@@ -20,9 +20,11 @@
     </li>
   </ul>
   </nav> 
-  
     </div>
   </div>
+
+     <OverlayMenu/>
+
   </header>
 </template>
 
@@ -31,8 +33,9 @@
 <style scoped>
 header {
   height: 30vh;
-  padding: 120px;
+  padding: 7rem;
   opacity:1;
+  margin-bottom:1rem;
 }
 
 .logo {
@@ -43,7 +46,7 @@ nav a {
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
-  padding: 1.2rem 2.8rem;
+  padding: 1.2rem 1.6rem;
   color: #817CDD;
 }
 
@@ -60,6 +63,27 @@ nav a:hover {
   color: #D887BD;
   font-weight: 500;
 }
+
+@media (max-width:860px) {
+    nav a {
+     width:100%;
+     display:inline;
+    }
+
+    header {
+      height: 25vh;
+      padding: 2rem;
+    }
+
+    nav {
+      display:none;
+    }
+
+    .logo {
+      text-align: center;
+      padding-bottom: 0.5rem;
+    }
+  }
 
 </style>
 

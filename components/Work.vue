@@ -2,7 +2,7 @@
     <section class="section section-project pb-5"> <!--inizio sezione progetti x2-->
     <div class="col-12 d-flex flex-wrap">
 
-      <div class="col-7 d-flex flex-wrap mb-5">
+      <div class="col-12 col-lg-7 d-flex flex-wrap mb-5">
         <div class="col-12 image-project">
           <a><img class="fluid" src="../img/kfd-cover.jpg" alt=""></a>
         </div>
@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="col-5 mb-5">
+      <div class="col-12 col-lg-5 mb-5">
         <div class="col-12 image-small">
           <a><img class="fluid" src="../img/cohabit-cover.jpg" alt=""></a>
           </div>
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-      <div class="col-5 mt-5 mb-5">
+      <div class="col-12 col-lg-5 lg-mt-5 mb-5">
         <div class="col-12 image-small" data-aos="fade-right">
           <a><img class="fluid" src="../img/trackit-cover.jpg" alt=""></a>
           </div>
@@ -32,7 +32,7 @@
           </div>
         </div>
 
-          <div class="col-7 d-flex flex-wrap mt-5 mb-5">
+          <div class="col-12 col-lg-7 d-flex flex-wrap lg-mt-5 mb-5">
         <div class="col-12 image-project">
           <NuxtLink to="/fondazionenegri" class="indicators-link">
           <img class="fluid" src="../img/fondazionenegri-cover.jpg" alt="">
@@ -93,7 +93,7 @@ h4 {
 }
 
 .image-small:hover img {
-  transform: scale(1.1);
+  transform: scale(1.0);
 }
 
 .image-project {
@@ -106,7 +106,6 @@ h4 {
 .image-project img {
   transition: transform 0.75s ease-out;
   will-change: auto;
-
 }
 
 .image-project:hover img {
@@ -116,6 +115,24 @@ h4 {
 .featured-title, .featured-subtitle {
   opacity: 1,
 }
+
+@media (max-width:1200px) {
+    .marquee-content li {
+    width:50vw;
+}
+
+  .description {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.image-small {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    opacity:1;
+}
+  }
 </style>
 
 <!--

@@ -50,26 +50,6 @@
     position: relative;
 }
 
-/*
-.marquee:before, .marquee:after {
-    position: absolute;
-    top: 0;
-    width: 40rem;
-    height: 100%;
-    content: "";
-    z-index: 1;
-}
-
-.marquee:before {
-    left: 0;
-    background-color: linear-gradient(to right, rgb(17, 17, 17) 0%, transparent 100%);
-}
-
-.marquee:after {
-    right: 0;
-    background-color: linear-gradient(to left, #111 0%, transparent 100%);
-}
-*/
 .marquee-content {
     list-style: none;
     height: 100%;
@@ -89,7 +69,12 @@
     white-space: nowrap;
     width:20vw;
     flex-shrink: 0;
-
 }
+
+@media (max-width:860px) {
+    .marquee-content li {
+    width:50vw;
+}
+  }
 
 </style>

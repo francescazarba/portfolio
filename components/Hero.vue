@@ -15,7 +15,7 @@
 <style scoped>
 .image-header {
   width:100%;
-  height:100%;
+  height:auto;
   overflow:hidden;
 }
 
@@ -59,6 +59,17 @@ h4 {
 .featured-title, .featured-subtitle {
   opacity: 1,
 }
+
+@media (max-width:860px) {
+  .section--hero {
+  height:40vh;
+  }
+
+  .description {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+  }
 
 </style>
 

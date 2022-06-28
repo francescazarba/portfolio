@@ -91,7 +91,7 @@ export default {
       });
 
     gsap.from('.image-project', {
-        y:800,
+        y:300,
         opacity:1,
         duration:1.6,
         startAt: {y:0},
@@ -101,32 +101,10 @@ export default {
       });
 
        gsap.from('.image-small', {
-        y:800,
+        y:300,
         opacity:1,
         duration:1.6,
         startAt: {y:0},
-        scrollTrigger: {
-        trigger: ".section-project",
-        }
-      });
-
-       gsap.from('.featured-title', {
-        x:-400,
-        opacity:0,
-        duration:1.6,
-        dalay:0.4,
-        startAt: {x:0,y:0},
-        scrollTrigger: {
-        trigger: ".section-project",
-        }
-      });
-
-       gsap.from('.featured-subtitle', {
-        x:-400,
-        opacity:0,
-        duration:1.6,
-        dalay:0.4,
-        startAt: {x:0,y:0},
         scrollTrigger: {
         trigger: ".section-project",
         }

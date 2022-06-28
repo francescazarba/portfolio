@@ -54,4 +54,19 @@ h4 {
 .email {
     opacity:1;
 }
+
+@media (max-width:860px) {
+  a {
+  font-size: calc(2rem + 1vh);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 7rem;
+  height: 20vh;
+  }
+
+.section-icon{
+    height:53vh;
+}
+
+  }
 </style>

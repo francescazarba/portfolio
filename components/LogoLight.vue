@@ -16,4 +16,10 @@
 .nuxt-logo {
   height: 46px;
 }
+
+@media (max-width:860px) {
+  svg{
+  margin-top:2rem;
+  }
+  }
 </style>

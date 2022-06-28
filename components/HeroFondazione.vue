@@ -45,11 +45,13 @@ h3 {
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: 600;
     line-height: 1.2;
+    color: var(--lighy-color);
 }
 
 h4 {
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: 400;
+    color: var(--lighy-color);
 }
 
 .fluid {
@@ -58,9 +60,20 @@ h4 {
   }
 
 .featured-title, .featured-subtitle {
-  opacity: 1,
+  opacity: 1;
+  
 }
 
+@media (max-width:860px) {
+  .section--hero {
+    height:40vh;
+  }
+
+  .description {
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+}
+  }
 </style>
 
 <!--
